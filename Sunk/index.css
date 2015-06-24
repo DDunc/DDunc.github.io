@@ -3,7 +3,7 @@
    src: url("fonts/MyUnderwood.ttf");
 }
 
-x
+
 body {
     background-image: url("images/tiled2.jpg");
     background-repeat: repeat;
@@ -101,6 +101,5 @@ html.full.currentimg {
   background-size: cover;
   opacity: 1;
 }
-
 
 

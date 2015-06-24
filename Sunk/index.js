@@ -156,13 +156,13 @@ function statMsg (old, cur){
 function updater (statArr, rules, postDreamFunc){
 	var i;
 	if (postDreamFunc){
-		postDreamFunc();
+		postDreamFunc()
 	}
 	if (rules){
 		rules();
 	}
 	for (i=0; i < statArr.length; i++){
-		statRules(null, statArr[i], true);
+		statRules(null, statArr[i], true)
 	  	}
 }
 
@@ -399,7 +399,7 @@ var inspection0 = new ButAct("inspection0", "Do a surprise inspection", "I decid
 	},[inspection0A, inspection0B]
 );
 
-var pressure = new ButAct ("pressure", "Investigate the fire.", "We're losing core pressure! Oxygen has decreased, somehow!", "CORE PRESSURE",
+var pressure = new ButAct ("pressure", "Lose core pressure", "We're losing core pressure! Oxygen has decreased, somehow!", "CORE PRESSURE",
 	function(){
 		statChange(oxygen, "-", 20);
 	}, ["last"]
@@ -503,11 +503,6 @@ var read2 = new ButAct ("read2", "Check in with Scopes", "I was interested to se
 	}, [read2A, read2B]
 );
 
-var read3 = new ButAct ("read3", "Study the translation.", "I read the translated chapter in my state room.", "I read the translated chapter in my room. It describes strange events that allegedly ocurred millions of years before all life on earth. It describes a great war between creatures of unimaginable power.",
-	function(){
-	}, ["last"]
-);
-
 
 var descend0 = new ButAct ("descend0", "Begin the descent", "Our target depth is 1800 feet and we'll reach it with a controlled descent.", "The increased pressure is putting stress on our systems, but none of our readings are outside of acceptable ranges.",
 	function(){
@@ -538,13 +533,12 @@ var nightmare0 = new ButAct ("nightmare0", "Talk about my dream with the other o
 		officerChange(officerArray[0], "loy", 2);
 	}, ["last"]
 );
-var nightmare2 = new ButAct ("nightmare2", "Put " + returnLeast(officerArray, "loyVal")[0].name + " in the brig for plotting a mutiny against me.", "I know what he's planning, I know what they're all planning.", "Nothing can stop it, nothing.",
+
+var nightmare1 = new ButAct ("nightmare1", "Put " + returnLeast(officerArray, "loyVal")[0].name + " in the brig for plotting a mutiny against me.", "I know what he's planning, I know what they're all planning.", "Nothing can stop it, nothing.",
 	function(){
 		statChange(morale, "-", 20);
 	}, ["last"]
 );
-
-//NEW ORDERED LIST TEST
 
 
 // Turn rules
@@ -649,7 +643,7 @@ var scenesArray =[
 [read0, oxygenProb0],
 [engineMod0, read1],
 [read2],
-[nightmare0, nightmare2],
+[nightmare0, nightmare1],
 [nightmare0, descend0],
 [descend1]
 ]
@@ -667,7 +661,7 @@ var subVal = {
 		var moraleEffect = [];
 		arr.forEach(function(element, index, array){
 			moraleEffect.push(element[stat]);
-		});
+		})
 		// console.log(moraleEffect);
 		moraleEffect = moraleEffect.reduce(
 		  	function(previousValue, currentValue) {
