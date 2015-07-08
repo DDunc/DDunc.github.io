@@ -8,6 +8,11 @@ $(document).ready(function(){
 			e.preventDefault();
 			window.location = $(this).attr("data");
 		});
+		//temporary fix
+		$("#slide2").on("click", function(e){
+			e.preventDefault();
+			window.location = "https://DDunc.github.io/Sunk"
+		});
 });
 
 
