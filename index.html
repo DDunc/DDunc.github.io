@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <title>DDunc Projects</title>
+<head>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="javascript/index.js"></script>
   </head>
-
+  <title>Duncan's Projects</title>
   <body>
-    <div id="container">
-      <div class="inner">
+  <div id="title" class="slide header">
+  <h1> I am Duncan, these are my projects. </h1>
+</div>
 
-        <header>
-          <h1>DDunc Projects</h1>
-        </header>
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>Clade: JavaScript and Regex</h1>
+    <p>Clade is a work in progress wiith the eventual goal of being able to recreate most (if not all) of the historical vowel and consonant shifts between English and German orthography. Because English and German are part of the same West Germanic language family, this tool could help language learners identify inobvious cognates and rapidly expand their active vocabulary.
+      <br>
+      <br>
+      <button data="https://github.com/DDunc/Clade">Clade Github</button>
+    </p>
+  </div>
+</div>
+ <!--This section exhibits some unusual behaviors related to CSS content value, will discuss with mentor during office hours -->
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1>Sunk: JavaScript and jQuery</h1>
+    <p>
+    Sunk is a small game conceived of as a hybrid of interactive supernatural fiction and resource management. This was a learning projects for jQuery, CSS, Bootstrap, and becoming familiar with native JavaScript methods, getters and setters, etc.
+      <br>
+      <br>
+      <button data="https://DDunc.github.io/Sunk">Sunk Working Alpha</button>
+    </p>
+  </div>
+  <img class=polaroid src="images/cthulunyc.jpg">
+  <img class=polaroid src="images/cosmicc.jpg">
+</div>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/DDunc" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <section id="main_content">
-          <p>Hello, I go by Duncan and I'm a self-taught coder of about nine months currently taking a Circuits Web Design course with General Assembly in Seattle. As you can probably tell already, my design skills could use a lot of work! I'm also very interested in the nuances of vanilla JavaScript and RegEx. </p>
-
-        <h2>
-        <a id="learning-projects" class="anchor" href="#learning-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Learning Projects</h2>
-
-        <h3>Vanilla JavaScript/HTML:</h3>
-        <p>Raft Times was my first (very modest) text-game project and I created it entirely in vanilla JavaScript. I taught myself basic JavaScript, recreated the basic game three different times using a different approach to structuring the code each time, and learned just how screwed up the DOM can be. </p>
-
-        <h3>jQuery/JavaScript/CSS/HTML5/Bootstrap:</h3>
-        <p><a href="Sunk/index.html" class="button">Sunk</a> is a work in progress, conceived of as a hybrid of interactive fiction and resource management. I've learned a significant amount of jQuery and CSS so far as well as becoming more familiar with native object methods, getters and setters, etc. I've learned how convenient Bootstrap can be, but also about some of its limitations. I've really only scratched the surface though, and the "game" portions still need a lot of work in order for there to be meaningful decisions. </p>
-
-        <h3>RegEx/JavaScript/Separation of Concerns/Modularity:</h3>
-        <p>Clade is also a work in progress with the goal of being able to recreate most (if not all) of the historical vowel and consonant shifts between English and German pronunciation/orthography. Because English and German are part of the same West Germanic language family, this tool could help language learners identify non-obvious English/German cognates and rapidly expand their active vocabulary.</p>
-        </section>
-      </div>
-    </div>
-  </body>
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>Gut Feeling: JavaScript, jQuery, Pixi</h1>
+    <p>Gut Feeling is my first collaborative project and very much still a work in progress. The player takes the role of the stomach's gut flora and must manage various bacteria in order to optimize digestion and avoid health issues.
+      <br>
+      <br>
+      <button data="https://github.com/drzaal/gut-feeling">Gut Feeling Github</button>
+    </p>
+  </div>
+</div>
+<div id="slide4" class="slide header">
+<h1>That's all for now!</h1>
+</div>
+<footer>
+  <p id ="contact">Contact Me:</p>
+    <a href="http://www.meetup.com/members/188133982/">On Meetup</a>
+    <a href="https://github.com/DDunc">On Github</a>
+</footer>
+</body>
 </html>

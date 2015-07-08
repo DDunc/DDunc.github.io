@@ -319,6 +319,15 @@ function butDisplay(action, $selector){
 }
 
 // 1.7 Officer Constructor function
+
+/* function mutinyCheck(officerArr){
+	officerArr.filter(function(officer){
+		if(officer.mutineer){
+			morale--;
+		}
+	})
+} */
+
 function Officer(name, loyVal, saneVal){
 	this.name = name;
 	this.loyVal = loyVal;
