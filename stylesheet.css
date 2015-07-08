@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Nunito);
+@font-face {
+   font-family: DosisLight;
+   src: url("fonts/dosislight.ttf");
+}
 
 html {
   height: 100%;
@@ -13,19 +16,29 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: Courier;
    text-shadow: .5px .5px white;
 }
 
+.font1 {
+  font-family: DosisLight;
+}
+
+.font2 {
+  font-family: Orbitron;
+}
+
 h1 {
-   font-size: 150%
+   font-size: 225%
+   font-weight: 800;
 }
 
 p {
-  font-size: 110%;
-  line-height: 110%;
+  font-size: 175%;
+  line-height: 125%;
+  font-weight: 700;
   color: black;
   font-family: inherit;
+  font-style: bold;
 }
 
 
@@ -67,7 +80,7 @@ img:last-of-type {
 }
 
 .slide:before {
-  opacity: .73;
+  opacity: .65;
   content: "";
   position: absolute;
   top: 0;
@@ -108,7 +121,7 @@ img:last-of-type {
 
 #title {
   background-image: url("images/works.png");
-   background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 #slide1:before {
@@ -132,11 +145,14 @@ img:last-of-type {
 }
 
 footer, a, #contact{
+  padding-left: 10px;
+  padding-bottom: 25px;
   background-color: black;
   overflow: hidden;
   font-size: 130%;
   color: white;
-  font-weight: 900;
+  font-weight: 800;
   text-align: center;
 }
+
 
