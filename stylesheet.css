@@ -16,7 +16,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-   text-shadow: .5px .5px white;
+  text-shadow: .5px .5px white;
 }
 
 .font1 {
@@ -38,12 +38,9 @@ p {
   font-weight: 700;
   color: black;
   font-family: inherit;
-  font-style: bold;
 }
 
-
-
-button {
+#fontchanger {
 font-family: inherit;
 font-size: 125%;
 background: black;
@@ -51,32 +48,13 @@ color: white;
 height: 2em;
 }
 
-
-
 .slide {
   position: relative;
   padding: 25vh 10%;
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100vw;
   box-sizing: border-box;
 	transform-style: inherit;
-}
-
-img {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(255,255,255, .8);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
 
 .slide:before {
@@ -89,22 +67,21 @@ img:last-of-type {
   right:0;
 }
 
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
 .title {
   width: 50%;
   padding: 5%;
   border-radius: 5px;
   background: rgba(255, 255, 255, .8);
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
 }
 
 .slide, .slide:before {
@@ -152,12 +129,18 @@ footer, a, #contact{
   font-size: 130%;
   color: white;
   font-weight: 800;
-  text-align: center;
+  text-align: center;ß
 }
 
 #darrow {
-  margin-top: 250px;
+  margin-top: 25%;
   font-size: 90px;
   text-align: center;
+}
+
+a.mainbut {
+display:inline-block;
+padding:1em 2em;
+border:2px solid #000;
 }
 
