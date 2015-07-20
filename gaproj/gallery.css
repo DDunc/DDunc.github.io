@@ -1,0 +1,104 @@
+@font-face {
+    font-family: chunk;
+    src: url("font/Chunk.ttf");
+}
+
+@font-face {
+    font-family: belgrano;
+    src: url("font/belgrano.ttf");
+}
+
+body {
+    font-family: belgrano;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gallery{
+  display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-top: 2.5%;
+}
+
+img {
+    background-color: black;
+    border: black;
+    font-size: 20px;
+    margin: 1.5%;
+    width: 30%;
+    border-radius: 25px;
+    padding: 1px;
+
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(232,232,232);
+    text-align: left;
+    font-size: 125%;
+    height: 10%;
+    border-radius: 0px 0px 25px 25px;
+}
+
+footer {
+    background-color: rgb(232,232,232);
+    color: black;
+    width:100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 25px 25px 0px 0px;
+    margin bottom: 0%;
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+    font-family: chunk;
+    line-height: 10%;
+    font-size: 225%;
+}
+
+a {
+    color: black;
+}
+
+
+.blog {
+    min-height: 80%;
+    margin-bottom: 19.9%;
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+p {
+    font-size: 105%;
+}
+
+h3 {
+    margin-top: 5%;
+    font-size: 125%;
+    text-decoration: underline;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.inactive {
+    background-color: black;
+    visibility: hidden;
+    display: none;
+}
+
+
