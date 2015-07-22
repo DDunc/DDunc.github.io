@@ -27,6 +27,7 @@ a {
     margin-right: 10%;
     margin-bottom: 5%;
     margin-top: 2.5%;
+    padding: 0px;
 }
 
 img {
@@ -78,8 +79,10 @@ a {
     min-height: 80%;
     margin-bottom: 19.9%;
     text-align: left;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
 }
 
 
