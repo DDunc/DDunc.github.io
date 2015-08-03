@@ -1,23 +1,94 @@
-@font-face {
-    font-family: chunk;
-    src: url("font/Chunk.ttf");
-}
-
-@font-face {
-    font-family: belgrano;
-    src: url("font/belgrano.ttf");
+html,body {
+	margin:0;padding:0
 }
 
 body {
-    font-family: belgrano;
-    background-color: white;
-    margin: 0px;
-    padding: 0px;
+	font: 76% arial,sans-serif;
+	color: white;
+	background-color: black;
+}
+
+p {
+	margin:10px 10px 10px
 }
 
 a {
-    margin-left: 10px;
-    margin-right: 10px;
+	display:block;color: #981793;padding:10px
+}
+
+h2 {
+	padding: 0px 0px 0px 20px;
+}
+
+div#header h1 {
+height:80px;line-height:80px;margin:0;
+  padding-left:10px; background: white ;color: black
+}
+div#content p{
+	line-height:1.4;
+	margin-left: 10px;
+}
+nav {
+	background: rgb(169,169,169);
+}
+
+#extra {
+	background: #111
+}
+div#footer{
+	background: #333;color: #FFF
+}
+div#footer p {
+	margin:0;padding:5px 10px
+}
+
+div#wrapper{
+	float:right;width:100%;margin-left:-200px
+}
+div#content, .blog{
+	margin-left:200px
+}
+nav {
+	float:left;
+	width:180px;
+	padding-right: 20px;
+}
+
+div#footer{
+	clear:both;width:100%
+}
+
+.navimg {
+	max-width: 80%;
+	float: inherit;
+	width:inherit;
+	margin: 10%;
+	border-radius: 3px 3px 3px 3px;
+}
+
+.blog {
+  display: inline-block;
+    width: 50%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 0px;
+}
+
+.galleryimg {
+    background-color: black;
+    border: black;
+    font-size: 20px;
+    width: 20%;
+    border-radius: 5px;
+    padding: 1px;
+    margin: 20px;
+
+}
+
+.inactive {
+    background-color: #111;
+    visibility: hidden;
+    display: none;
 }
 
 .gallery{
@@ -26,82 +97,14 @@ a {
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 5%;
-    margin-top: 2.5%;
     padding: 0px;
 }
 
-img {
-    background-color: black;
-    border: black;
-    font-size: 20px;
-    margin: 1.5%;
-    width: 30%;
-    border-radius: 25px;
-    padding: 1px;
-
-}
-
-nav {
-    display: inline-block;
-    width: 100%;
-    background-color: rgb(232,232,232);
-    text-align: left;
-    font-size: 125%;
-    height: 10%;
-    border-radius: 0px 0px 25px 25px;
-}
-
-footer {
-    background-color: rgb(232,232,232);
-    color: black;
-    width:100%;
-    display: inline-block;
-    text-align: center;
-    font-size: 100%;
-    border-radius: 25px 25px 0px 0px;
-    margin bottom: 0%;
-    margin-top: 10%;
-}
-
-h1 {
-    text-align: center;
-    font-family: chunk;
-    line-height: 10%;
-    font-size: 225%;
-}
-
 a {
-    color: black;
+	color: white;
 }
 
+.lasttitle {
+	margin-left: 20px;
 
-.blog {
-    min-height: 80%;
-    margin-bottom: 19.9%;
-    text-align: left;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2.5%;
 }
-
-
-p {
-    font-size: 105%;
-}
-
-h3 {
-    margin-top: 5%;
-    font-size: 125%;
-    text-decoration: underline;
-    text-align: left;
-    margin-left: 2%;
-}
-
-.inactive {
-    background-color: black;
-    visibility: hidden;
-    display: none;
-}
-
-
