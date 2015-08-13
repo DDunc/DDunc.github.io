@@ -1,0 +1,333 @@
+body {
+  background: url(images/forest.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: LeagueGothic;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(64, 64, 64);
+  background-color: rgb(246, 243, 236);
+  letter-spacing: .05em;
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+    font-family: LeagueGothic;
+    src: url('LeagueGothic.ttf');
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  letter-spacing: .05em;
+}
+
+main {
+  background-color: rgb(246, 243, 236);
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 70%;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: .05em;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+  text-align: left;
+  text-decoration: underline;
+}
+p {
+  margin: 0 0 15px;
+    word-spacing: .1em;
+}
+
+ul, ol {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+li {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 2.25em;
+letter-spacing: .05em;
+}
+
+.postimg {
+  display: inline-block;
+  width: auto;
+  min-width: 100%;
+  height: 1100px;
+  overflow: hidden;
+}
+
+a {
+  font-weight: 100;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Scaffolding
+-------------------------------------------------- */
+.side-bar {
+  height: 20px;
+  width: 100%;
+  background: rgba(255,204,0, .6);
+}
+/* Header */
+.masthead {
+  color: rgb(246, 243, 236);
+  background-color: rgba(48,48,45, .75);
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.masthead-inner .tag {
+  margin-top: 15px;
+  color: rgba(255,204,0, .9);
+  font-size: 1.8em;
+  text-shadow: 2px 2px black;
+}
+.tag {
+text-align: center;
+}
+
+.masthead a {
+  color: rgb(246, 243, 236);
+  cursor: pointer;
+}
+.masthead a:hover {
+  color: rgba(255,204,0, .9);
+  text-shadow: 2px 2px black;
+}
+
+.colophon {
+  margin-top: 15px;
+  color: rgb(64, 64, 64);
+   text-shadow: 2px 2px rgb(48,48,45);
+}
+.colophon p {
+  font-size: 10px;
+}
+.colophon-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+/* Posts
+-------------------------------------------------- */
+.posts {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 25%;
+  height: 25%;
+}
+
+.post {
+  margin: 20px auto;
+  width: 90%;
+  position: relative;
+    filter: alpha(opacity=50);
+}
+
+.post-background {
+  box-shadow: rgba(0,0,0,0.15) 0px 0px 3px;
+  margin: auto;
+  height: 225px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  opacity: .5;
+}
+.title {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  color: rgb(246, 243, 236);
+}
+.title-text {
+  color: rgb(246, 243, 236);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 2em;
+  background-size: contain;
+}
+
+p {
+  font-size: 2em;
+}
+
+  .myname {
+    color: rgb(246, 243, 236);
+    text-shadow: 2px 2px black;
+  }
+
+footer {
+  background-color: rgba(48,48,45, .8);
+  color: white;
+   position:absolute;
+   width:100%;
+   margin-top:  250px;
+   height:45px;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+@media (max-width: 500px) {
+  .myname {
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+  .title {
+    width: 100%;
+  }
+  .title-text {
+    font-size: 175%;
+    background-color: rgba(0, 0, 0, 0);
+    text-shadow: 2px 2px rgb(64,64,64);
+
+  }
+  img {
+    display: inline;
+    height: 225px;
+    overflow: hidden;
+  }
+  .lead {
+    font-size: 24px;
+  }
+
+  .side-bar {
+    height: 100%;
+    width: 20px;
+    position: absolute;
+  }
+  .container {
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 65%;
+  }
+
+  .masthead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  .masthead-inner {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 20px;
+    text-align: left;
+  }
+
+
+  .post {
+    position: relative;
+    margin: 10% auto;
+  }
+
+  .title {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+
+  li {
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 175%;
+  }
+
+  .tag {
+    display: none;
+  }
+
+  h1 {
+    color: gray;
+    font-size: 175%;
+  }
+
+}
+
+
+.bio p{
+  font-family: Verdana, sans-serif !important;
+  font-size: .75em;
+  padding-top: 15px;
+  letter-spacing: 0.01em;
+
+}
+
+.bio {
+  font-size: 24px;
+  margin-top: 0px;
+  padding-left:  2.5%;
+  padding-right: 2.5%;
+  text-align: justify;
+  margin-bottom: 22px;
+}
+
+.biopic {
+  height: 30%;
+  width: 30%;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 7px;
+    margin-right: 20px;
+    float: left;
+
+}
+
+.likedislike {
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+.biopic {
+    height: 50%;
+    width: 50%;
+
+}
+.bio p {
+    font-size: .45em;
+    text-align: justify;
+}
+footer {
+  display: none;
+}
+};
+
+
