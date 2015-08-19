@@ -249,6 +249,7 @@ footer {
     bottom: 25%;
     left: 20px;
     text-align: left;
+    min-width: 20%;
   }
 
 
