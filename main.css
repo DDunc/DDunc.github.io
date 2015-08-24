@@ -202,7 +202,7 @@ footer {
 /* Responsive
 -------------------------------------------------- */
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .myname {
     color: white;
     text-shadow: 2px 2px black;
@@ -211,7 +211,7 @@ footer {
     width: 100%;
   }
   .title-text {
-    font-size: 175%;
+    font-size: 125%;
     background-color: rgba(0, 0, 0, 0);
     text-shadow: 2px 2px rgb(64,64,64);
   }
@@ -285,6 +285,9 @@ footer {
     color: gray;
     font-size: 175%;
   }
+  a {
+    font-size: 65% !important;
+  }
 
 }
 
@@ -317,11 +320,6 @@ footer {
 
 }
 
-.likedislike {
-  font-size: 14px;
-}
-
-@media (max-width: 500px) {
 .biopic {
     height: 50%;
     width: 50%;
@@ -334,12 +332,12 @@ footer {
 footer {
   display: none;
 }
-  };
 
 @media (max-width: 768px) {
   footer {
   display: none;
 }
+
 }
 
 
