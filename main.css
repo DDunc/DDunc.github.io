@@ -1,6 +1,4 @@
-@-ms-viewport {
-  width: device-width;
-}
+
 
 body {
   background: url(images/forest.jpg) no-repeat center center fixed;
@@ -204,7 +202,7 @@ footer {
 /* Responsive
 -------------------------------------------------- */
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .myname {
     color: white;
     text-shadow: 2px 2px black;
@@ -336,13 +334,12 @@ footer {
 footer {
   display: none;
 }
-};
+  };
 
 @media (max-width: 768px) {
   footer {
   display: none;
 }
-
 }
 
 
