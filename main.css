@@ -1,3 +1,7 @@
+@-ms-viewport {
+  width: device-width;
+}
+
 body {
   background: url(images/forest.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -20,6 +24,7 @@ body {
     font-family: LeagueGothic;
     src: url('LeagueGothic.ttf');
 }
+
 
 html {
   margin: 0;
@@ -199,7 +204,7 @@ footer {
 /* Responsive
 -------------------------------------------------- */
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   .myname {
     color: white;
     text-shadow: 2px 2px black;
@@ -211,7 +216,9 @@ footer {
     font-size: 175%;
     background-color: rgba(0, 0, 0, 0);
     text-shadow: 2px 2px rgb(64,64,64);
-
+  }
+  a {
+  font-size: 20px !important;
   }
   img {
     display: inline;
@@ -330,5 +337,12 @@ footer {
   display: none;
 }
 };
+
+@media (max-width: 768px) {
+  footer {
+  display: none;
+}
+
+}
 
 
