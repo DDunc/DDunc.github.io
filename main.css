@@ -203,6 +203,12 @@ footer {
 -------------------------------------------------- */
 
 @media (max-width: 480px) {
+  h1 {
+  display: none !important;
+}
+li, a {
+  line-height: .8 !important;
+}
   .myname {
     color: white;
     text-shadow: 2px 2px black;
@@ -214,9 +220,6 @@ footer {
     font-size: 125%;
     background-color: rgba(0, 0, 0, 0);
     text-shadow: 2px 2px rgb(64,64,64);
-  }
-  a {
-  font-size: 20px !important;
   }
   img {
     display: inline;
@@ -250,8 +253,6 @@ footer {
   }
   .masthead-inner {
     position: absolute;
-    top: 25%;
-    bottom: 25%;
     left: 20px;
     text-align: left;
     min-width: 20%;
@@ -274,7 +275,6 @@ footer {
     display: block;
     padding-left: 0px;
     padding-right: 0px;
-    font-size: 175%;
   }
 
   .tag {
@@ -286,7 +286,7 @@ footer {
     font-size: 175%;
   }
   a {
-    font-size: 65% !important;
+    font-size: 50% !important;
   }
 
 }
@@ -337,6 +337,7 @@ footer {
   footer {
   display: none;
 }
+
 
 }
 
