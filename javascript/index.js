@@ -1,9 +1,9 @@
 $(document).ready(function(){
-		$("button").on("click", function(e){
+		$("#fontchanger").on("click", function(e){
 			e.preventDefault();
-		window.location = $(this).attr("data");
+			$("body").toggleClass("font1");
+			$("body").toggleClass("font2");
 		});
-
 });
 
 

@@ -1,4 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Nunito);
+@font-face {
+   font-family: DosisLight;
+   src: url("fonts/dosislight.ttf");
+}
 
 html {
   height: 100%;
@@ -13,24 +16,31 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: Courier;
-   text-shadow: .5px .5px white;
+  text-shadow: .5px .5px white;
+}
+
+.font1 {
+  font-family: DosisLight;
+}
+
+.font2 {
+  font-family: Orbitron;
 }
 
 h1 {
-   font-size: 150%
+   font-size: 225%
+   font-weight: 800;
 }
 
 p {
-  font-size: 110%;
-  line-height: 110%;
+  font-size: 175%;
+  line-height: 125%;
+  font-weight: 700;
   color: black;
   font-family: inherit;
 }
 
-
-
-button {
+#fontchanger {
 font-family: inherit;
 font-size: 125%;
 background: black;
@@ -38,36 +48,17 @@ color: white;
 height: 2em;
 }
 
-
-
 .slide {
   position: relative;
   padding: 25vh 10%;
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100vw;
   box-sizing: border-box;
 	transform-style: inherit;
 }
 
-img {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  width: 320px;
-  height: 240px;
-  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
-  padding: 10px;
-  border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-img:last-of-type {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
-
 .slide:before {
-  opacity: .73;
+  opacity: .65;
   content: "";
   position: absolute;
   top: 0;
@@ -76,22 +67,21 @@ img:last-of-type {
   right:0;
 }
 
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
 .title {
   width: 50%;
   padding: 5%;
   border-radius: 5px;
-  background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
+  background: rgba(255, 255, 255, .8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 .slide, .slide:before {
@@ -102,13 +92,13 @@ img:last-of-type {
 .header {
   text-align: center;
   font-size: 175%;
-  color: #fff;
+  color: white;
   text-shadow: 0 2px 2px #000;
 }
 
 #title {
   background-image: url("images/works.png");
-   background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 #slide1:before {
@@ -132,11 +122,25 @@ img:last-of-type {
 }
 
 footer, a, #contact{
+  padding-left: 10px;
+  padding-bottom: 25px;
   background-color: black;
   overflow: hidden;
   font-size: 130%;
   color: white;
-  font-weight: 900;
+  font-weight: 800;
+  text-align: center;ß
+}
+
+#darrow {
+  margin-top: 25%;
+  font-size: 90px;
   text-align: center;
+}
+
+a.mainbut {
+display:inline-block;
+padding:1em 2em;
+border:2px solid #000;
 }
 

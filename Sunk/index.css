@@ -28,6 +28,7 @@ a {
 
 img {
   opacity: .25;
+  max-width: 50%;
 }
 
 p {

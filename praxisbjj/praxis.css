@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.video{
+    display: inline-block;
+    width: 45%;
+    height: 45%;
+    float: left;
+    margin: 15px;
+}
+
+.thevideo {
+  width: 100%;
+  height: 100%;
+  border: 5px solid;
+}
+
+p {
+  font-size: 150%;
+}
+
+video {
+
+}

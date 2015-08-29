@@ -1,0 +1,62 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.jumbotron {
+	background: url(../img/bdongs1.jpg) no-repeat center right fixed;
+	background-size: cover;
+	color: white;
+	padding-bottom: 10%;
+	font-size: 150% !important;
+	text-shadow: 2px 2px black;
+	background-position: 0px 20px;
+
+}
+
+.jumbotron p {
+	font-size: 150%;
+	text-decoration: bold;
+}
+.navbar-brand {
+	margin-right: 20px;
+	font-size: 150%;
+}
+
+a, .btn-primary{
+	background: black !important;
+	color: white !important;
+	border-color: black;
+	text-shadow: none !important;
+}
+
+body {
+	background: black;
+	color: white;
+}
+
+.navbar {
+	background: black;
+}
+
+#video-bg {
+position: fixed;
+right: 0;
+bottom: 0;
+width: auto;
+min-width: 100%;
+height: auto;
+min-height: 100%;
+z-index: -100;
+background: black;
+background-size: cover;
+}
+
+
+
+
+
+
+
+
+
