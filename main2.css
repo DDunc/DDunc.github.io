@@ -1,0 +1,49 @@
+@viewport {
+  zoom: 1.0; /* same as initial-scale=1 */
+  width: device-width;
+}
+
+* {
+  margin: 0px;
+  border: 1px solid black;
+  padding: 0px;
+  display: block;
+  font-size: 1em;
+}
+
+header {
+  background-color: orange !important;
+}
+nav {
+  background-color: green;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none; /* eliminates bullet points*/
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  background-color: purple;
+}
+
+article {
+  background-color: gray;
+}
+
+
+aside {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  float: right;
+  margin-left: 20px;
+  width:  calc(10% + 50px);
+}
+
+
+
